@@ -82,6 +82,10 @@ Add your answer to this readme file, commit your changes to this repository.
 ```
 #### Your answer: [2p]
 
+The distance between the top-left corner of the document body and the yellow box is sqrt(40^2+40^2)=~56,57px  (40 px to the right, 40 px to the left). 
+
+According to MDN an absolutely positioned element's position is calculated based on this: " ... position it at a specified position relative to its closest positioned ancestor if any, or otherwise relative to the initial containing block."
+It means yellow box's closest positioned ancestor is the blue box, and the blue box is postitioned to the initial containing block, which is the body element. 
 
 ## 3. Explain concepts (~15 minutes) [4 points]
 Add your answer to this readme file, commit your changes to this repository.
@@ -89,7 +93,14 @@ Add your answer to this readme file, commit your changes to this repository.
 
 ### Explain the difference between `display: block` and `display: inline` in CSS! What is `display: inline-block`?
 #### Your answer: [2p]
-
+`display: block`: the element fills the available space in width, until the width is set. It's height can be set as well. It starts in a new line.
+`display: inline`: the element's width and height cannot be set, it occupies the space no more than its actual size. It does not start in a new line.
+`display: inline-block`: the combination of the previous 2 elements. It does not start a new line, but it height and width can be set.
 
 ### What is the difference between a `<section>` and an `<article>` element? Name one good example of using an `<article>`.
 #### Your answer: [2p]
+`<article>` : a part of a website, which can be reused independately, because its content is self-contained. Usually has an h1, and other headings. 
+
+e.g. article inside a travel blog, which describes a locations history
+
+`<section>`: part of a website, which contains thematically grouped elements. It usually has an h1, and other headings. A section can contain more articles.
